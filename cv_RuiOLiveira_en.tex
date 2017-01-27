@@ -12,21 +12,24 @@
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
+% \addbibresource{bibliography.bib}
 % Important notes:
 % This template needs to be compiled with XeLaTeX and the bibliography, if used,
 % needs to be compiled with biber rather than bibtex.
+% Specify the bibliography file to include publications
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \RequirePackage{fixltx2e}
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 \usepackage{rotating}
-\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\usepackage{unicode-math}
 
 \begin{document}
 
 
-\header{rui}{Oliveira}{programmer} % Your name and current job title/field
+\header{rui}{Oliveira}{Software Engineer} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -47,16 +50,17 @@ Portugal
 ~
 \href{mailto:rui96pedro@gmail.com}{rui96pedro@gmail.com}
 ~
-\href{https://bitbucket.org/ruiOliveiras94}{Portfolio}
+\href{http://ruioliveiras.eu}{http://ruioliveiras.eu}
 ~
 \section{languages}
 portuguese
-english 
+english
 \section{programming}
-Java, C, MySql,
-Php, Javascript, AngularJs,
-Git , Linux {\color{red} $\varheartsuit$} 
-Asp.net, VisualStudio
+Scala, Java, C,
+Akka,
+Javascript,
+Sql, NoSql (Couchchbase)
+Git, Linux {\color{red} $\varheartsuit$}
 ~
 \end{aside}
 
@@ -64,31 +68,21 @@ Asp.net, VisualStudio
 %			Resumo
 %---------------------------------------------------------------------------------------
 \section{aboutMe}
-BSc in Informatics Engineering at Minho University (Braga, Portugal)
-Currently attending the 3rd year of the BSc in Informatics Engineering at Minho University (Braga, Portugal), after concluding a high school professional programming course. Throughout the BSc, the students are required to do several practical assignments, being some of them detailed in the portfolio below. The high school final project is also highlighted. In addition to a good educational background, a short term summer internship was held at the end of the 2nd year of study.
+I'm a programmer since 2010.
+My first steps as a programmer was in the high school, in a programming course. The final project of this course are highlighted.
+Continued the studies with BSc in Informatics Engineering.
+To complete the education background I did a summer internship.
+After completing the BSc started working as Full-Stack developer, developing Software as a Service.
+In this project, also went to Web Summit 2016, making market prospection.
+
+% Currently attending the 3rd year of the BSc in Informatics Engineering at Minho University (Braga, Portugal),
+% after concluding a high school professional programming course. Throughout the BSc, the students are required
+% to do several practical assignments, being some of them detailed in the portfolio below.
+% The high school final project is also highlighted. In addition to a good educational background, a short term
+% summer internship was held at the end of the 2nd year of study.
 
 %Student of BSc in Informatics Engineering (some practical works on my Portfolio page)\\ High school: Professional course in programming (internship and final project).
-%---------------------------------------------------------------------------------------
-%			EDUCATION SECTION
-%---------------------------------------------------------------------------------------
-\section{education}
 
-\begin{entrylist}
-% LICENCIATURA------------------------------------------
-\entry
-{2012--2015}
-{BSc in Informatics Engineering }
-{University of Minho, Portugal}
-{Comprehensive and prestiged undergraduate course in computer science and informatics engineering. Highlights: object oriented, functional and imperative programming; Algorithms and data structures; Relational database architecture and management; Distributed Systems - concurrency and synchronization. Current degree grade: 16 }
-%CURSO PROFISSIONAL------------------------------------------
-\entry
-{2009--2012}
-{Professional Course {\normalfont High School – grade 9 to 12}}
-{Didaxis, Portugal}
-{\emph{Professional Course in Management and Programming of Computer Systems}. Highlights: introduction to C, .Net and Java programming languages. Final project: development of an Android Application (see below in awards). Internship: Codevision (see below in experience).}
-
-%------------------------------------------------
-\end{entrylist}
 
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -97,6 +91,24 @@ Currently attending the 3rd year of the BSc in Informatics Engineering at Minho 
 
 \begin{entrylist}
 %------------------------------------------------
+\entry
+{2015 2016}
+{Impacting Group }
+{Porto,Portugal}
+{\emph{Software Engineer - Full-Stack Developer (1 year 7 months)} \\
+% Development of Saas4saaS. Saas4saaS is a set of services to create Software as a service, the implemented services was User management and Subscription Management.
+% I was responsible
+% R\&D about the possibility of create a new product.
+% Development of saas4saas, a project made in scala using Spray and Akka.
+Research and development of Software as a Service:
+\begin{itemize}
+ \item Centralized Log Solution (working prototype)
+ \item Centralized User management (Production ready)
+ \item Subscription management (Production ready)
+\end{itemize}
+keywords: Java, Spring, Maven, Scala, Akka, Play, SBT, NoSQL (couchbase), Swagger,
+}
+
 \entry
 {2014}
 {Wondeotec - {\normalfont emailbidding.com}}
@@ -110,32 +122,72 @@ Participation in the development of EmailBidding, a email marketing platform, ma
 {Codevision}
 {Braga,Portugal}
 {\emph{Professional Internship (2 months)} \\
-Development of a mobile web application (Javascript - Sencha Touch framework, Visual Studio, MVC Architecture) 
+Development of a mobile web application (Javascript - Sencha Touch framework, Visual Studio, MVC Architecture)
 }
 \end{entrylist}
 
+
+%---------------------------------------------------------------------------------------
+%			EDUCATION SECTION
+%---------------------------------------------------------------------------------------
+\section{education}
+
+\begin{entrylist}
+% LICENCIATURA------------------------------------------
+\entry
+{2012--2015}
+{BSc in Informatics Engineering }
+{University of Minho, Portugal}
+{Comprehensive and prestiged undergraduate course in computer science and informatics engineering. Highlights: object-oriented, functional and imperative programming; Algorithms and data structures; Relational database architecture and management; Distributed Systems - concurrency and synchronization. Degree grade: 16 }
+%CURSO PROFISSIONAL------------------------------------------
+\entry
+{2009--2012}
+{Professional Course {\normalfont High School}}
+{Didaxis, Portugal}
+{\emph{Professional Course in Management and Programming of Computer Systems}. Highlights: introduction to C, .Net and Java programming languages. Final project: development of an Android Application (see below in awards). Internship: Codevision (see below in experience). Degree grade: 17}
+
+%------------------------------------------------
+\end{entrylist}
+
+
+% --------
+% New Page
+% -------
+\newpage
 %-------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %-------------------------------------------------------------------------------------
-\section{awards}
-
+\section{other skills}
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2013}
-{My Project is Entrepreneur}
-{Municipal award, Vila Nova de Famalicão (Portugal)}
-{Final project of the Professional Course. Android Application to manage people wardrobe.}
-%------------------------------------------------
+{2016}
+{Market Prospection: Web Summit 2016}
+{Lisbon, Portugal}
+{I went to Web summit 2016 to get market feedback about the SaaS that we was creating in Impacting Group,}
+
 \entry
-{2012}
-{TECLA (1\textsuperscript{st} place)}
-{Programming Competition, Aveiro (Portugal)}
-{TECLA is a programming competition for teams of two elements. The objective is to solve algorithmic challenges.}
+{2014}
+{Speaking: Php Introduction}
+{University of Minho, Portugal}
+{Workshop based course. Subjects: HTML, PHP and Laravel Framework.}
+
+\entry
+{2013}
+{Entrepreneur: My Project is Entrepreneur}
+{Municipal award, Vila Nova de Famalicão (Portugal)}
+{Final project of the Professional Course, an Android application. It was winner of a entrepreneur conquest. }
+% Android Application to manage people wardrobe.}
+%------------------------------------------------
+% \entry
+% {2012}
+% {TECLA (1\textsuperscript{st} place)}
+% {Programming Competition, Aveiro (Portugal)}
+% {TECLA is a programming competition for teams of two elements. The objective is to solve algorithmic challenges.}
 %------------------------------------------------
 \entry
 {2011}
-{ONI (5\textsuperscript{th} place)}
+{Competitor: ONI (5\textsuperscript{th} place)}
 {Programming Competition, Porto (Portugal)}
 {ONI is the Portuguese National Olympiads of Informatics.}
 
@@ -145,77 +197,83 @@ Development of a mobile web application (Javascript - Sencha Touch framework, Vi
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{speaking}
-\begin{entrylist}
-    \entry
-    {2014}
-    {Php Introduction}
-    {University of Minho, Portugal}
-    {Workshop based course. Subjects: HTML, Php and Laravel Framework.}
-\end{entrylist}
+%\section{speaking}
+%\begin{entrylist}
+%    \entry
+%    {2014}
+%    {Php Introduction}
+%    {University of Minho, Portugal}
+%    {Workshop based course. Subjects: HTML, PHP and Laravel framework.}
+%\end{entrylist}
 
-% --------
-% New Page
-% -------
-\newpage
 \section{portfolio {\normalfont \normalsize (\href{https://bitbucket.org/ruioliveiras}{https://bitbucket.org/ruioliveiras})}}
-\begin{entrylist}
 
+\begin{entrylist}
 % SEI
+\entry
+{2016}
+{Personal Blog {\normalfont \normalsize (\href{http://ruioliveiras.eu}{http://ruioliveiras.eu})}}
+{Porto, Portugal}
+{
+  I have done this blog using a static generator (HarpJS).
+  I'm creating a Scala tutorial in the following link: \href{http://ruioliveiras.eu/post/scala-tutorial.html}{http://ruioliveiras.eu/post/scala-tutorial.html}
+  % My blog is responsible, the side-menu in mobile collapse. And support a summary in the posts.
+}
+
 \entry
 {2015}
 {Musical challenge application Client/Server}
 {University of Minho, Portugal}
 {
     Application created with Java. Allows the existence of many inter-connected servers, with each client connecting to one server. Technical highlights:
-\begin{itemize} 
-    \item Communication between the Client and the Server using UDP Datagrams
-    \item Communication between Servers using TCP sockets
+\begin{itemize}
+    \item Client/Server communication using UDP Datagrams
+    \item Server/Server communication using TCP sockets
     \item UPD datagram fragmentation system
 \end{itemize}
 }
 
 
 % SEI
-\entry
-{2014}
-{SEI 2015 web  {\normalfont \normalsize (\href{https://github.com/cesium/SEI15}{https://github.com/cesium/SEI15})}}
-{University of Minho, Portugal}
-{Participation in the development of SEI 2015 Web-Site. Implemented angularJS usage to avoid html repetitions.}
+% \entry
+% {2014}
+% {SEI 2015 web  {\normalfont \normalsize (\href{https://github.com/cesium/SEI15}{https://github.com/cesium/SEI15})}}
+% {University of Minho, Portugal}
+% {Participation in the development of SEI 2015 Web-Site. Implemented angularJS usage to avoid html repetitions.}
 
 % distributed systems:
-\entry
-{2014}
-{Distributed System \"Warehouse\" Client/Server }
-{University of Minho, Portugal}
-{Client/Server made with Java using socket. Technical highlights:
-\begin{itemize} 
-    \item Concurrency control with reentrant locks and conditions.
-    \item Communication inside sockets with pure text using serializing and deserializing.
-\end{itemize}
-}
+% \entry
+% {2014}
+% {Distributed System \"Warehouse\" Client/Server }
+% {University of Minho, Portugal}
+% {Client/Server made with Java using socket. Technical highlights:
+% \begin{itemize}
+%    \item Concurrency control with reentrant locks and conditions.
+%    \item Communication inside sockets with pure text using serializing and deserializing.
+% \end{itemize}
+% }
 % habitat application
 \entry
 {2014}
 {CRUD management Application for Habitat Portugal}
 {University of Minho, Portugal}
-{CRUD management Application made with Java and Mysql database. Technical highlights:
-\begin{itemize} 
+{CRUD management Application made with Java and MySql database. Technical highlights:
+\begin{itemize}
     \item Three layers: View, Business, Data.
-    \item Database with triggers to derivative attributes
+    \item Database with triggers
     \item Generic interface design
 \end{itemize}
 }
 % Dpum
-\entry
-{2014}
-{Dpum CESIUM code validator}
-{University of Minho, Portugal}
-{Web site created to manage a programming conquest at Minho university.}
+% \entry
+% {2014}
+% {Dpum CESIUM code validator}
+% {University of Minho, Portugal}
+% {Web site created to manage a programming conquest at Minho university.}
 
 %------------------------------------------------
 
-%\begin{itemize} 
+%\begin{itemize}
 %	\item Login, using session token with time out;
 %	\item Manage Items, Users, purchases;
 %	\item Add pictures to items;
@@ -224,14 +282,14 @@ Development of a mobile web application (Javascript - Sencha Touch framework, Vi
 %------------------------------------------------
 \entry
 {2013}
-{File Compressor with C++, Shannon Fano algorithm}
+{C++ File Compressor, Shannon Fano algorithm}
 {University of Minho, Portugal}
-{Implementation highlights: Graph based algorithms and Bitwise operations.
-%\begin{itemize} 
-%	\item Graphs algorithms;
-%	\item Dynamic allocated memory;
-%	\item Bitwise operation;
-%\end{itemize}
+{Implementation highlights: % Graph based algorithms and Bitwise operations.
+\begin{itemize}
+  \item Graphs algorithms;
+	\item Dynamic allocated memory;
+	\item Bitwise operation;
+\end{itemize}
 }
 %------------------------------------------------
 \end{entrylist}

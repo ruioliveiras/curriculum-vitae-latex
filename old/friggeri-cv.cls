@@ -285,30 +285,11 @@
   \par\vspace{0.3\baselineskip}
 }
 
-\DeclareNameFormat{default}{%
-  \renewcommand*{\multinamedelim}{\addsemicolon\addspace}%
-  \nameparts{#1}%
-  \usebibmacro{name:family-given}
-    {\namepartfamily}
-    {\namepartgiveni}
-    {\namepartprefix}
-    {\namepartsuffix}%
-  \usebibmacro{name:andothers}%
-}
-
-\newcommand{\printbibsection}[2]{
-  \begin{refsection}
-    \nocite{*}
-    \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
-  \end{refsection}
-}
-
 
 \DeclareSortingScheme{chronological}{
   \sort[direction=descending]{\field{year}}
   \sort[direction=descending]{\field{month}}
 }
-
 
 
 
